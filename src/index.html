@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Actions</h1>
+    <table class="actionlist" id="actionlist">
+    </table>
+    <div class="result">
+        <p>Result: <span id = "actionResult">&nbsp</span></p>
+    </div>
+    <p class="error" id = "errorText"></p>
+    <button class="action-roll" onclick="doStraightAction(2)">2</button>
+    <button class="action-roll" onclick="doStraightAction(3)">3</button>
+    <button class="action-roll" onclick="doStraightAction(4)">4</button>
+    <button class="action-roll" onclick="doStraightAction(5)">5</button>
+    <button class="action-roll" onclick="doStraightAction(6)">6</button>
+    <button class="action-roll" onclick="doStraightAction(8)">8</button>
+    <button class="action-roll" onclick="doStraightAction(10)">10</button>
+    <button class="action-roll" onclick="doStraightAction(12)">12</button>
+    <button class="action-roll" onclick="doStraightAction(20)">20</button>
+    <button class="action-roll" onclick="doStraightAction(100)">100</button>
+    <form onsubmit="createAction(event)">
+        <div class="formRow">
+            <label for="formName">Name </label>
+            <input oninput="storeForm()" id="formName" type="text" name="name" required class="name-input"/>
+        </div>
+        <div class="formRow">
+            <label for="formDice">Dice </label>
+            <input oninput="storeForm()" id="formDice" type="text" name="dice" required class="dice-input"/>
+        </div>
+        <button class="create-button">Create Task</button>
+        <p>Format "Dice" like in these examples: "2d6", "d20 + 7", "d6 - 1." You can even leave out the 'd' entirely.</p>
+    </form>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>

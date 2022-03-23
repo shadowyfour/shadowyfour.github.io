@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+:root {
+	/* Change these variables according to your theme */
+	--primary: #c8e6c9;
+	--accent: #97b498;
+	--negative: #195a1e;
+	--delete: #770000;
+	--primary-text: #000000;
+	--interactive: #ffffff;
+
+	/* Window background and default font */
+    background-color: var(--negative);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    max-width: 55rem;			  /* Keeps the page from overflowing on wide monitors */
+    margin: 0.5em auto;		      /* 0.5em is top and bottom margin. 'auto' for left and right centers the body on the page */
+    border: 1px solid black;	/* Surround the content with a solid black border */
+    border-radius: 5px;			  /* Round the corners of the body section */
+    padding: 0.75rem;			  /* Padding goes between the borders and the internal content */
+    background-color: var(--primary);	/* Contrast the body background from the page background */
+}
+
+h1 {
+	font-family: 'Shadows Into Light', cursive;
+}
+
+form {
+	margin-top: 4em;
+	border: 1px var(--primary-text) solid;
+	background-color: var(--accent);
+	padding-left: 1em;
+}
+
+.actionlist {
+	padding-left: 0;		/* Remove padding that <ul> has by default */
+	list-style-type: none;	/* No bullets in the list */
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 0 1em;
+}
+
+tr {
+	width: 100%;
+}
+
+.action {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 1.2em;
+}
+
+.action-roll {
+	display: inline-block;
+	box-sizing: border-box;
+	color: var(--primary-text);
+	font-size: 1.5em !important;
+}
+
+.action-special {
+	display: inline-block;
+	box-sizing: border-box;
+	color: var(--primary-text);
+	font-size: 0.5em !important;
+}
+
+.action-name {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.action-dice {
+	display: inline-block;
+	width: fit-content;
+}
+
+.action-delete {
+	display: inline-block;
+	box-sizing: border-box;
+	color: var(--delete);
+}
+
+.result {
+	font-size: 3em;
+	background: var(--interactive);
+	min-height: 15%;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.material-icon {
+	border: none; /* No border */
+	background: none; /* Match the background of the parent */
+	font-family: 'Material Icons'; /* Use the icon font */
+	font-size: inherit; /* Input doesn't automatically inherit font size. This brings it in. */
+	cursor: pointer; /* Change the cursor to a pointer when hovering on this element */
+}
+
+.formRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1em;
+}
+
+label {
+	width: 4em;
+}
+
+.name-input {
+	height: 2em;
+	margin: 0.4em 2%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.dice-input {
+	height: 2em;
+	margin: 0.4em 2%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.create-button {
+	border: 2px var(--primary-text) solid;
+	margin: 0.4em 2%;
+	padding: 0.5em 1em;
+	display: block;
+	width: fit-content;
+	background-image: linear-gradient(var(--interactive), var(--primary));
+}
