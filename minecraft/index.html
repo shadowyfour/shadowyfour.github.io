@@ -73,11 +73,11 @@
 
   <h2>Installation</h2>
   <details>
-    <summary>> Prism (Recommended)</summary>
+    <summary>> Prism installation instructions (Recommended)</summary>
   <p>Prism is an open source alternative Minecraft launcher. Let me know if you need help with any part of the process</p>
   <ol>
     <li>Download <code>Davi's Server 2024 v1.1.zip</code> from <a href="https://drive.google.com/file/d/1b76C4XLJcO2BuX7py7X7NZBBTNvmV6lg/view?usp=sharing">
-      my google drive</a> and remember where you put it on your computer. Do not extract the contents</li>
+      my Google Drive</a> and remember where you put it on your computer. Do not extract the contents</li>
     <li>Download and install <a href="https://prismlauncher.org/">Prism</a></li>
     <li>Open Prism</li>
     <li>If you need Java, download a JDK version 17 such as <a href="https://adoptium.net/temurin/releases/?version=17">Eclipse Temurin</a>. After downloading it, refresh Prism's selection screen and you should see it available</li>
@@ -89,7 +89,7 @@
   </ol>
   </details>
   <details>
-  <summary>> Alternate installation instructions (Manual)</summary>
+  <summary>> Manual installation instructions (not recommended)</summary>
   <ol>
     <li>Start up the minecraft launcher, select version 1.20.1 (to the left of the play button), and
       run the game to make sure it is downloaded</li>
@@ -110,10 +110,19 @@
     <summary id="update">> Upgrading to latest mods (mods updated as of 2024-01-29)</summary>
     <ol>
       <li>Download <code>Davi's Server 2024 v1.1.zip</code> from <a href="https://drive.google.com/file/d/1b76C4XLJcO2BuX7py7X7NZBBTNvmV6lg/view?usp=sharing">
-        my google drive</a> and remember where you put it on your computer. Do not extract the contents</li>
+        my Google Drive</a> and remember where you put it on your computer. Do not extract the contents</li>
       <li>Open Prism</li>
-      <li>Add Instance -> Import -> browse to <code>Davi's Server 2024 v1.1.zip</code></li>
-      <li>(Optional) copy over any relevant settings from your previous Minecraft instance</li>
+      <li>Add Instance -> Import -> browse to <code>Davi's Server 2024 v1.1.zip</code> and confirm</li>
+      <li>Copy relevant settings from your previous Minecraft instance by moving files on your local
+        filesystem. For each instance (old and new), use Prism's "folder" button and then open up .minecraft (the file
+        is hidden; you may need to look up how to see hidden files on your operating system). Move the following files
+        from the old instance's folder to the new instance's folder:
+      <ul>
+        <li>options.txt</li>
+        <li>emi.json</li>
+        <li>patchouli_data.json</li>
+      </ul>
+      </li>
       <li>Delete the previous instance</li>
     </ol>
   </details>
